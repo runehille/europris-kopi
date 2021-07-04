@@ -1,4 +1,4 @@
-import { Container, Logo } from "./styles/header"
+import { Container, Logo, Searchbar, LinkButton } from "./styles/header"
 
 export default function Header({children}) {
     return (
@@ -9,5 +9,18 @@ export default function Header({children}) {
 Header.Logo = function HeaderLogo({children}) {
     return (
     <Logo>{children}</Logo>
+    )
+}
+
+Header.Searchbar = function HeaderSearchbar({children}) {
+    return (
+        <Searchbar placeholder="Søk...">{children}</Searchbar>
+    )
+}
+
+
+Header.LinkButton = function HeaderLinkButton({children, ...props}) {
+    return (
+        <LinkButton {...props}></LinkButton>
     )
 }
