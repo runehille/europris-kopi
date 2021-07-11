@@ -31,7 +31,7 @@ export const Image = styled.div`
     grid-area: img;
     cursor: pointer;
     border: 1px solid red;
-    background-image: url('/Kvikk-Lunsj.jpg');
+    background-image: url(${props => props.src});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -100,7 +100,7 @@ export const Heart = styled.div`
     cursor: pointer;
 `
 
-export const ControlBtn = styled.div`
+export const ControlBtn = styled.button`
     border: 1px solid black;
     cursor: pointer;
     font-size: 30px;

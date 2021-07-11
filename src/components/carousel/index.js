@@ -15,9 +15,9 @@ CompleteCarousel.Item = function({children}) {
     )
 }
 
-CompleteCarousel.Image = function({children}) {
+CompleteCarousel.Image = function({children, ...props}) {
     return (
-        <Image/>
+        <Image {...props}/>
     )
 }
 
@@ -57,8 +57,8 @@ CompleteCarousel.Heart = function({children}) {
     )
 }
 
-CompleteCarousel.ControlBtn = function({children}) {
+CompleteCarousel.ControlBtn = function({children, ...props}) {
     return (
-        <ControlBtn>{children}</ControlBtn>
+        <ControlBtn {...props}>{children}</ControlBtn>
     )
 }
