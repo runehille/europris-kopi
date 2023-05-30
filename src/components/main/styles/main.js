@@ -9,12 +9,13 @@ export const Container = styled.div`
 `
 
 export const ImageContainer = styled.div`
-    border: 1px solid black;
+    // border: 1px solid black;
     background-image: url('/tilbud.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 1em;
+    margin-bottom: 3em;
     height: 20em;
     width: auto;
 `

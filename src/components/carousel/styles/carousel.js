@@ -5,7 +5,8 @@ export const Carousel = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    // border: 1px solid black;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.75);
     height: 15em;
     width: 18em;
     margin-left: auto;
@@ -30,7 +31,7 @@ export const Item = styled.div`
 export const Image = styled.div`
     grid-area: img;
     cursor: pointer;
-    border: 1px solid red;
+    // border: 1px solid red;
     background-image: url(${props => props.src});
     background-size: contain;
     background-repeat: no-repeat;
@@ -43,7 +44,7 @@ export const Image = styled.div`
 export const Title = styled.p`
     grid-area: title;
     cursor: pointer;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     font-weight: bold;
     height: 1.5em;
     width: fit-content;
@@ -52,7 +53,7 @@ export const Title = styled.p`
 
 export const Caption = styled.p`
     grid-area: caption;
-    border: 1px solid green;
+    // border: 1px solid green;
     justify-self: left;
     height: 1.5em;
     margin: 0;
@@ -63,7 +64,7 @@ export const Price = styled.p`
     font-weight: 900;
     font-size: 20px;
     grid-area: price;
-    border: 1px solid green;
+    // border: 1px solid green;
     justify-self: left;
     height: 2em;
     margin: 0;
@@ -72,7 +73,7 @@ export const Price = styled.p`
 export const Status = styled.p`
     background-color: lightgrey;
     grid-area: status;
-    border: 0px solid indigo;
+    // border: 0px solid indigo;
     text-align: center;
     line-height: 2.5em;
     margin-top: auto;
@@ -101,10 +102,11 @@ export const Heart = styled.div`
 `
 
 export const ControlBtn = styled.button`
-    border: 1px solid black;
+    border: none;
     cursor: pointer;
     font-size: 30px;
     width: 3em;
     height: 1em;
     line-height: 1em;
+    background-color: transparent;
 `
